@@ -1,0 +1,16 @@
+.main__top-block {
+  display: flex;
+  max-width: 1365px;
+  width: 100%;
+
+  .main__textarea {
+    flex-grow: 1.8;
+    resize: none;
+    padding: 10px;
+    font-size: 24px;
+    text-transform: uppercase;
+    &::placeholder {
+      font-size: 24px;
+    }
+  }
+}
