@@ -1,14 +1,4 @@
-export default class testData {
-  constructor() {
-    this.init();
-  }
-
-  init() {
-    this.getData();
-  }
-
-  getData() {
-    const data = {
+export default {
       "id": "jklhlkfdsf21312edsqdas",
       "algorithm": {
         "id": 1,
@@ -63,6 +53,3 @@ export default class testData {
           }
         }]
     };
-    return data;
-  }
-}

@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import './style.scss';
 import Influence from "./Influence/Influence";
 import Deviation from "./Deviation/Deviation";
