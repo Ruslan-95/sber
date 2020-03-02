@@ -1,9 +1,7 @@
 import React from "react";
-import "./index.scss"
+import "./Escalation.scss"
 
-function Index(props) {
-  const {prop} = props;
-  console.log({props});
+function Escalation() {
   return (
     <div className="main__bottom-block escalation">
       <div className="escalation__wrapper">
@@ -46,4 +44,4 @@ function Index(props) {
   )
 }
 
-export default Index
+export default Escalation

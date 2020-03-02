@@ -1,9 +1,7 @@
 import React from "react";
-import "./index.scss"
+import "./Count.scss"
 
-function Index(props) {
-  const {prop} = props;
-  console.log({props});
+function Count() {
   return (
     <div className="main__middle-block count">
       <div className="count__wrapper">
@@ -19,4 +17,4 @@ function Index(props) {
   )
 }
 
-export default Index
+export default Count

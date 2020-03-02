@@ -1,9 +1,7 @@
 import React from "react";
-import "./index.scss"
+import "./Influence.scss"
 
-function Index(props) {
-  const {prop} = props;
-  console.log({props});
+function Influence() {
   return (
     <div className="main__top-block">
       <textarea className="main__textarea" placeholder='на что влияет'/>
@@ -11,4 +9,4 @@ function Index(props) {
   )
 }
 
-export default Index
+export default Influence

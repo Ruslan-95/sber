@@ -1,12 +1,11 @@
 import React from "react";
-import "./index.scss"
+import "./Shutdowns.scss"
 
-function Index(props) {
-  console.log('props', props);
-  const {testData} = props;
-  console.log('p', {testData});
+function Shutdowns({id}) {
+  console.log({id});
   return (
     <div className="main__middle-block shutdowns">
+      <h2>{id}</h2>
       <div className="shutdowns__wrapper">
         <p>Порог отклонения</p>
         <b> > 0% </b>
@@ -21,4 +20,4 @@ function Index(props) {
   )
 }
 
-export default Index
+export default Shutdowns

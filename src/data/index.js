@@ -1,7 +1,6 @@
 export default class testData {
   constructor() {
     this.init();
-    console.log('this.getData', this.getData())
   }
 
   init() {
@@ -10,7 +9,7 @@ export default class testData {
 
   getData() {
     const data = {
-      id: "jklhlkfdsf21312edsqdas",
+      "id": "jklhlkfdsf21312edsqdas",
       "algorithm": {
         "id": 1,
         "calc_description": "Описание расчета"
@@ -64,6 +63,6 @@ export default class testData {
           }
         }]
     };
-    return setTimeout(data, 10000);
+    return data;
   }
 }

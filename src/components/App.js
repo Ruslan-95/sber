@@ -1,38 +1,50 @@
-import React from "react";
+import React, { Component } from "react";
 import './style.scss';
-import Influence from "./Influence/index";
-import Deviation from "./Deviation/index";
-import Count from "./Count/index";
-import Shutdowns from "./Shutdowns/index";
-import Measure from "./Measure/index";
-import Escalation from "./Escalation/index";
-import Parameters from "./Parameters/index";
-import testData from "../data/index";
+import Influence from "./Influence/Influence";
+import Deviation from "./Deviation/Deviation";
+import Count from "./Count/Count";
+import Shutdowns from "./Shutdowns/Shutdowns";
+import Measure from "./Measure/Measure";
+import Escalation from "./Escalation/Escalation";
+import Parameters from "./Parameters/Parameters";
+import Store from "../store";
 
-function App() {
-  return (
-    <section className="main">
-      <div className="main__title">
-        <h1 className="main__title-text">Оргонизация работы команды</h1>
-      </div>
-      <div className="main__wrapper">
-        <div className="main__top">
-          <h2 className="main__top-title">Наличие незакрытых задач на конец спринта</h2>
-          <Influence/>
+class App extends React.Component {
+  componentDidMount() {
+    Store.getData().then(data => {
+      this.setState({
+        data
+      });
+    });
+  }
+
+  render() {
+    return (
+      <section className="main">
+        <div className="main__title">
+          <h1 className="main__title-text">Оргонизация работы команды</h1>
         </div>
-        <div className="main__middle">
-          <Deviation/>
-          <Count/>
-          <Shutdowns testData={testData.id} foo="test"/>
+        <div className="main__wrapper">
+          <div className="main__top">
+            <h2 className="main__top-title">
+              Наличие незакрытых задач на конец спринта
+            </h2>
+            <Influence />
+          </div>
+          <div className="main__middle">
+            <Deviation />
+            <Count />
+            <Shutdowns id={this.state?.data?.id} />
+          </div>
+          <div className="main__bottom">
+            <Measure />
+            <Escalation />
+            <Parameters />
+          </div>
         </div>
-        <div className="main__bottom">
-          <Measure/>
-          <Escalation/>
-          <Parameters/>
-        </div>
-      </div>
-    </section>
-  )
+      </section>
+    );
+  }
 }
 
-export default App
+export default App;

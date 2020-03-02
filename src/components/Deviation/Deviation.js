@@ -1,9 +1,7 @@
 import React from "react";
-import "./index.scss"
+import "./Deviation.scss"
 
-function Index(props) {
-  const {prop} = props;
-  console.log({props});
+function Deviation() {
   return (
     <div className="main__middle-block deviation">
       <div className="deviation__wrapper">
@@ -14,4 +12,4 @@ function Index(props) {
   )
 }
 
-export default Index
+export default Deviation

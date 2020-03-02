@@ -1,9 +1,7 @@
 import React from "react";
-import "./index.scss"
+import "./Parameters.scss"
 
-function Index(props) {
-  const {prop} = props;
-  console.log({props});
+function Parameters() {
   return (
     <div className="main__bottom-block parameters">
       <div className="parameters__wrapper">
@@ -21,4 +19,4 @@ function Index(props) {
   )
 }
 
-export default Index
+export default Parameters
