@@ -22,9 +22,13 @@ export default {
         {
           "id": 1,
 
-          "task_level": 1,
+          "task_level": 0,
 
-          "task_deadline_period": 14,
+          "task_deadline_period": "Срез на дату",
+
+          "task_deadline_line": "1 неделя",
+
+          "task_deadline_all": "4 дня",
 
           "obj_management_post": {
 

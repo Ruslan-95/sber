@@ -1,5 +1,5 @@
 export default {
-  "id": "string", //# ID записи
+  "id": "message", //# ID записи
 
   "algorithm": {
 
@@ -10,6 +10,12 @@ export default {
   },
 
   "dev_type_id": 12333, //# Код отклонения
+
+  "status1": "\"IFT\", \"IFT\"",
+
+  "status2": "\"UAT\", \"UAT\"",
+
+  "status3": "\"Done\"",
 
   "dev_tag": "qsd", //# Тэг отклонения
 

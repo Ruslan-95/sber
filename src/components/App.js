@@ -38,7 +38,7 @@ class App extends React.Component {
           </div>
           <div className="main__middle">
             <Deviation />
-            <Count />
+            <Count interfaceText={this.state?.interfaceText}/>
             <Shutdowns data={this.state?.data} />
           </div>
           <div className="main__bottom">
