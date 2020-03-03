@@ -1,4 +1,5 @@
-import data from './data'
+import data from './data/data';
+import interfaceText from './data/interface';
 
 class Store {
   static getData() {
@@ -6,6 +7,12 @@ class Store {
       setTimeout(() => resolve(data), 1300)
     })
   }
+  static getInterface() {
+    return new Promise((resolve) => {
+      setTimeout(() => resolve(interfaceText), 1300)
+    })
+  }
 }
+
 
 export default Store

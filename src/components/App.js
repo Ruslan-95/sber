@@ -16,6 +16,11 @@ class App extends React.Component {
         data
       });
     });
+    Store.getInterface().then(interfaceText => {
+      this.setState({
+        interfaceText
+      });
+    });
   }
 
   render() {
@@ -34,7 +39,7 @@ class App extends React.Component {
           <div className="main__middle">
             <Deviation />
             <Count />
-            <Shutdowns id={this.state?.data?.id} />
+            <Shutdowns data={this.state?.data} />
           </div>
           <div className="main__bottom">
             <Measure />

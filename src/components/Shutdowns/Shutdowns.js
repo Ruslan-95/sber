@@ -1,11 +1,12 @@
 import React from "react";
 import "./Shutdowns.scss"
 
-function Shutdowns({id}) {
-  console.log({id});
+function Shutdowns({data}) {
+  const abc = {data};
+  console.log('state---', abc);
   return (
     <div className="main__middle-block shutdowns">
-      <h2>{id}</h2>
+      <h2>{data}</h2>
       <div className="shutdowns__wrapper">
         <p>Порог отклонения</p>
         <b> > 0% </b>

@@ -5,7 +5,7 @@ function Parameters() {
   return (
     <div className="main__bottom-block parameters">
       <div className="parameters__wrapper">
-        <h3>Параметры задачи</h3>
+        <h3>Параметры задачи </h3>
         <p>Обьект отклонения</p>
         <b>Команда</b>
         <p>Группировка</p>
